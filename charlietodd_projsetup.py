@@ -3,12 +3,12 @@
 import pathlib
 import time
 import os
-import charlietodd_utils.py
+import charlietodd_utils
 
 #creates a folder for each year students took the ACT prep class
 def create_folders_for_range(first_class, last_class) -> None:
-  int(first_class) = 2005
-  int(last_class) = 2024
+  int(first_class) == 2005
+  int(last_class) == 2024
   for year in range(first_class, last_class+1):
     pathlib.Path(f"{year}").mkdir(exist_ok=True)
 
@@ -34,6 +34,7 @@ def create_folders_periodically(duration_secs,period) -> None:
     time.sleep(period)
 
 def main():
+  print(f"Byline: {charlietodd_utils}
   create_folders_for_range(first_class=2005, last_class=2024)
   create_folders_from_list(students=["Charlie", "Alyssa", "Sofia", "Henry", "Kate"])
   create_prefixed_folders(students=["Charlie", "Alyssa", "Sofia", "Henry", "Kate"], prefix="score")
